@@ -13,7 +13,7 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
     <meta charset="utf-8" />
-    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Webstudio</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,7 +28,7 @@
       <div class="container header-container">
         <nav class="header-navigation">
           <a class="header-logo" href="./index.html"
-            >Web<span class="header-logo-color">Studio</span></a
+            >Web<span class="logo-part">Studio</span></a
           >
           <ul class="header-navigation-list">
             <li class="navigation-item">
@@ -45,27 +45,45 @@
         <address class="header-address">
           <ul class="header-address-list">
             <li>
-              <a href="mailto:info@devstudio.com" class="address-list"
+              <a href="mailto:info@devstudio.com" class="address-link"
                 >info@devstudio.com</a
               >
             </li>
             <li>
-              <a href="tel:+110001111111" class="address-list"
+              <a href="tel:+110001111111" class="address-link"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
+
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="buger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="mobile-wrapper">
+          <div class="container mobile-menu-container">
+            <button class="mobile-menu-close" data-menu-close>Close</button>
+            <nav class="mobile-menu-nav">Navigation</nav>
+            <address class="mobile-menu-address">Address</address>
+            <div class="soc-link">Soc link</div>
+          </div>
+        </div>
       </div>
     </header>
     <main>
-      <section class="section">
+      <section class="hidden section">
         <div class="container title-container">
           <h1 class="title">Effective Solutions for Your Business</h1>
-          <button class="title-button" type="button">Order Service</button>
+          <button class="title-button" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
-      <section class="section-strategy">
+      <section class="hidden section-strategy">
         <div class="container strategy-container">
           <h2 class="visually-hidden">Strategy</h2>
           <ul class="strategy-strategy-list">
@@ -120,7 +138,7 @@
           </ul>
         </div>
       </section>
-      <section class="section-team">
+      <section class="hidden section-team">
         <div class="container card team-container">
           <h2 class="section-team-title">Our Team</h2>
           <ul class="secton-team-list">
@@ -295,7 +313,7 @@
           </ul>
         </div>
       </section>
-      <section class="section-portfolio">
+      <section class="hidden section-portfolio">
         <div class="container portfolio-container">
           <h2 class="section-portfolio-title" id="portfolio">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -418,7 +436,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="hidden footer">
       <div class="container footer-container">
         <div class="footer-branding">
           <a class="footer-logo" href="./index.html"
@@ -484,9 +502,9 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-open">
+    <div class="backdrop hidden" data-modal>
       <div class="modal">
-        <button class="cross-button" type="button">
+        <button class="cross-button" type="button" data-modal-close>
           <svg class="icon-vector" width="8" height="8">
             <use href="./images/icons.svg#icon-Vector"></use>
           </svg>
@@ -571,5 +589,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
