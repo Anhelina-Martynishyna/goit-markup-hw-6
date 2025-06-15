@@ -63,16 +63,6 @@
           </svg>
         </button>
       </div>
-      <div class="mobile-menu" data-menu>
-        <div class="mobile-wrapper">
-          <div class="container mobile-menu-container">
-            <button class="mobile-menu-close" data-menu-close>Close</button>
-            <nav class="mobile-menu-nav">Navigation</nav>
-            <address class="mobile-menu-address">Address</address>
-            <div class="soc-link">Soc link</div>
-          </div>
-        </div>
-      </div>
     </header>
     <main>
       <section class="section">
@@ -502,6 +492,76 @@
         </div>
       </div>
     </footer>
+    <div class="mobile-menu is-open" data-menu>
+      <div class="mobile-wrapper">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" type="button" data-menu-close>
+            <svg class="mobile-icon-vector" width="8" height="8">
+              <use href="./images/icons.svg#icon-Vector"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-nav-list">
+              <li class="mobile-nav-item">
+                <a href="" class="mobile-nav-link current">Studio</a>
+              </li>
+              <li class="mobile-nav-item">
+                <a href="" class="mobile-nav-link">Portfolio</a>
+              </li>
+              <li class="mobile-nav-item">
+                <a href="" class="mobile-nav-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mobile-menu-address">
+            <ul class="menu-address-list">
+              <li class="menu-address-item">
+                <a href="tel:+110001111111" class="menu-address-link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="menu-address-item">
+                <a href="mailto:info@devstudio.com" class="menu-address-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div class="soc-link">
+            <ul class="menu-icon-list">
+              <li class="menu-icon-item">
+                <a class="menu-icon-link" href="#">
+                  <svg class="menu-icon-soc" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-icon-item">
+                <a class="menu-icon-link" href="#">
+                  <svg class="menu-icon-soc" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-icon-item">
+                <a class="menu-icon-link" href="#">
+                  <svg class="menu-icon-soc" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-icon-item">
+                <a class="menu-icon-link" href="#">
+                  <svg class="menu-icon-soc" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="backdrop" data-modal>
       <div class="modal">
         <button class="cross-button" type="button" data-modal-close>
