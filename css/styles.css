@@ -328,6 +328,7 @@ button {
 .menu-address-link:hover,
 .menu-address-link:focus {
   color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-menu-address {
   display: block;
